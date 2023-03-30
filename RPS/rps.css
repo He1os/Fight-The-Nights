@@ -1,0 +1,208 @@
+img {
+    height: 100px;
+    width: 100px;
+}
+
+button {
+    border: none;
+}
+
+body {
+    background-image: url('castle.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bigMama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.charaters,
+.game,
+.end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.charaters {
+    margin-top: 50px;
+}
+
+@font-face {
+    font-family: oldLondon;
+    src: url(OldLondon.ttf);
+}
+
+.header {
+    font-size: 50px;
+    font-family: oldLondon;
+    color: white;
+    text-shadow: -1px 0px 0px #c9c907,
+        1px 0px 0px #c9c907,
+        0px -1px 0px #c9c907,
+        0px 1px 0px #c9c907;
+    color: #832e2e;
+    margin-top: 0px;
+    
+    ;
+
+}
+.header h1 {
+    margin-top: 0px;
+}
+
+.startButton button:hover {
+    color: #c9c907;
+    cursor: pointer;
+    text-shadow: -1px 0px 0px #832e2e,
+        2px 0px 0px #832e2e,
+        0px -1px 0px #832e2e,
+        0px 1px 0px #832e2e;
+
+}
+
+.startButton button {
+    width: 210px;
+    height: 210px;
+    border-radius: 15px;
+    background: transparent;
+    color: #832e2e;
+    text-shadow: -1px 0px 0px #c9c907,
+    1px 0px 0px #c9c907,
+    0px -1px 0px #c9c907,
+    0px 1px 0px #c9c907;
+    font-size: 30px;
+    font-family: oldLondon;
+    background-image: url('board.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    align-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    
+}
+
+.startButton {
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+p {
+    font-size: 35px;
+}
+
+.reset {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.character-score{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.playerScore,
+.computerScore,
+.scoreboard,
+.whoGetsPoints,
+.game-player {
+    font-size: 45px;
+    font-family: oldLondon;
+    color: #832e2e;
+    text-shadow: -1px 0px 0px #c9c907,
+        1px 0px 0px #c9c907,
+        0px -1px 0px #c9c907,
+        0px 1px 0px #c9c907;
+        margin-top: 5px;
+}
+
+.choose-character button {
+    background: transparent;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.choose-character button:hover {
+   /*  border: solid 1px #c9c907; */
+    border-radius: 15px;
+    background-color: #832e2e7c;
+}
+
+.reset button,
+.end button {
+    margin-top: 30px;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: #832e2e;
+    color: #c9c907;
+    border: solid 1px #c9c907;
+    cursor: pointer;
+}
+
+.reset button:hover,
+.end button:hover {
+    background-color: #c9c907;
+    color: #832e2e;
+}
+
+.rules {
+    font-family: oldLondon;
+    font-size: 35px;
+    color: white;
+    color: #c9c907;
+    margin-top: 200px;
+    background-image: url(floor2.jpg);
+    border-radius: 15px;
+    padding: 0 10px;
+    color: #832e2e;
+    text-shadow: -1px 0px 0px #c9c907,
+        0.5px 0px 0px #c9c907,
+        0px -1px 0px #c9c907,
+        0px 1px 0px #c9c907;
+    
+}
+.rules p{
+    font-size: 40px;
+}
+
+
+.whoGetsPoints{
+    background-image: url(floor2.jpg);
+    padding: 0 20px ;
+    border-radius: 15px;
+}
+
+.character-choice, .game-player{
+    display: flex;
+    margin-top: 50px;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.game-player{
+    font-size: 35px;
+    color: black;
+}
+
+.wizard, .knight, .archer{
+    padding: 0 20px;
+}
+
+.h1Scoreboard{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 54px;
+}
+

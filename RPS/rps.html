@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight The Knights</title>
+    <link rel="stylesheet" href="rps.css">
+    <link rel="shortcut icon" href="faviconshield.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="h1-div">
+        <h1 hidden>RPS</h1>
+    </div>
+
+    <h2 hidden> Welcome to your destiny </h2>
+
+    <audio src="yeahbaby.mp3" autoplay loop></audio>
+
+
+
+
+    <!-- Characater div -->
+    <div class="charaters">
+        <div class="scoreboard">
+            <h1 class="h1Scoreboard">Scoreboard</h1> 
+
+        </div>
+
+        <div class="character-score">
+            
+            <div class="playerScore">Play:</div>
+            <div class="computerScore">Comp:</div>
+        </div>
+
+        <div class="choose-character">
+            <button onclick="characterChoice('wizard')" class="wizard"><img src="wizard.png"
+                    alt="wizard character"></button>
+
+            <button onclick="characterChoice('knight')" class="knight"><img src="knight.png"
+                    alt="knight character"></button>
+
+            <button onclick="characterChoice('archer')" class="archer"><img src="archer.png"
+                    alt="archer character"></button>
+        </div>
+    </div>
+
+    <!-- Game div -->
+    <div class="game">
+        <div class="whoGetsPoints">Outcome</div>
+        <div class="game-player">
+            <div>Play</div> 
+            <div>vs</div>
+            <div>Comp</div>
+        </div>
+        <div class="character-choice">
+            <img src="transparent.png" alt="" class="player-character">
+            <img src="transparent.png" alt="" class="comp-character">
+        </div>
+
+    </div>
+
+    <div class="end">
+
+        <button onclick="resetGame()">Reset Game</button>
+        <button onclick="location='start.html'">End Game</button>
+
+    </div>
+    <script src="rps.js"></script>
+</body>
+
+</html>
